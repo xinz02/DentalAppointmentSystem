@@ -1,0 +1,503 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Navigation bar*/
+.navbar{
+    width:100%;
+    height: 80vh;
+    background-image: url(images/dashboard_main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.sticky
+{
+    position: -webkit-sticky;
+    position: fixed;
+    top: 0;
+    height: auto;
+    transition: background-color 0.5s ease;
+    align-items: center;
+    z-index: +1;
+}
+
+.transparent
+{
+    background-color: transparent;
+}
+
+.change-color
+{
+    background-color: rgb(111, 146, 177);
+    box-shadow: 0px 3px 4px;
+}
+
+nav
+{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    line-height: 50px;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    transition: 0.7s all;
+    margin-top: 10px;
+    align-items: center;
+}
+
+nav ul li:hover{
+    background-color:rgba(13, 19, 68, 0.827);
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgba(13, 19, 68, 0.827);
+    padding: 20px;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.navLogo
+{
+    display: none;
+    position: fixed;
+    top: 5%;
+    left: 50px;
+    transform: translateY(-50%);
+    width: 260px;
+    height: 80px;
+    float: left;
+}
+
+.image-li
+{
+    display: none;
+}
+
+.image-li .navLogo
+{
+    display: inline-block;
+}
+
+.bookApp
+{
+    display: block;
+    width: auto;
+    padding: 5px 40px 5px 40px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px;
+    margin-left: 65px;
+    background-color: #fff;
+    position: absolute;
+    top: 65vh;
+}
+
+nav a{
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(13, 19, 68, 0.827);
+}
+
+a button
+{
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 60px;
+    padding: 5px 30px 5px 30px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 10px #888;
+    margin: auto;
+    margin-top: 80px;
+    background-color: rgba(13, 19, 68, 0.915);
+}
+
+a
+{
+    text-decoration: none;
+}
+
+/*About Us*/
+.about
+{
+    margin: 150px;
+}
+
+.about img
+{
+    display: inline-block;
+    width: 600px;
+    height: 500px;
+    margin-right: 30px;
+    margin-top: 30px;
+}
+
+.about p
+{
+    font-size: 20px;
+    margin-left: 50px;
+}
+
+.about h2
+{
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-size: 30px;
+    color:rgba(0, 45, 158, 0.827);
+}
+
+.about h1
+{
+    font-size: 40px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.container_about, .container_dentist
+{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Our Services*/
+.services, .dentist
+{
+    margin: 50px 130px 130px 130px;
+}
+
+.services h2, .dentist h2
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(0, 45, 158, 0.827);
+    margin-bottom: 20px;
+}
+
+.services h1, .dentist h1
+{
+    text-align: center;
+    font-size: 40px;
+}
+
+.container_services
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.service
+{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    box-shadow: 0px 3px 8px #636363a2;
+    border-radius: 5px;
+    background-color: #f1f1f1cf;
+    margin: auto;
+}
+
+.service img
+{
+    width: 280px;
+    height: 250px;
+    margin: 30px 20px 30px 34px;
+    box-shadow: 0px 6px 8px #636363a2 ;
+}
+
+.service h3
+{
+    font-size: 22px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(13, 19, 68, 0.915);
+    font-weight: bold;
+    margin: 0px 0px 10px 30px;
+}
+
+.service p
+{
+    font-size: 20px;
+    color:rgb(95, 132, 171);
+    margin: 0px 20px 30px 30px;
+}
+
+/*Reserve a slot*/
+.reserve
+{
+    background-color: #77b3ef;
+    margin: 150px;
+}
+
+.container_reserve
+{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reserve img
+{
+    height: 500px;
+    width: 600px;
+}
+
+.text_container
+{
+    padding: 0 90px 0 90px;
+    margin: auto;
+}
+
+.text_container h1
+{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgba(13, 19, 68, 0.827);
+    margin: 0 0 40px 0;
+}
+
+.text_container p, .chooseUs p
+{
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+}
+
+.list
+{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    color:rgba(13, 19, 68, 0.827);
+    font-weight: bold;
+}
+
+.list li
+{
+    list-style-type: none;
+}
+
+.list li:before
+{
+    content:"";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(images/tick.png);
+    background-color: transparent;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+/*Our ProCare Team*/
+.container_dentist
+{
+    margin-top: 50px;
+    height: auto;
+}
+
+.chooseUs
+{
+    padding: 0 70px 0 70px;
+    margin: auto;
+    height: auto;
+    background-color: rgba(179, 212, 243, 0.303);
+    box-shadow: 0 3px 8px #888;
+}
+
+.chooseUs h3
+{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(13, 19, 68, 0.827);
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.chooseUs p
+{
+    font-size: 16px;
+    color:rgba(13, 19, 68, 0.827);
+    margin-bottom: 30px;
+}
+
+.list
+{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 40px;
+    color:rgba(13, 19, 68, 0.827);
+    font-weight: bold;
+}
+
+.list li
+{
+    list-style-type: none;
+}
+
+.list li:before
+{
+    content:"";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url(images/tick.png);
+    background-color: transparent;
+    background-size: cover;
+    margin-right: 20px;
+}
+
+.btn
+{
+    background-color: #fff;
+    color: rgba(13, 19, 68, 0.915);
+    border: none;
+    outline: none;
+    font-size: 25px;
+    margin-top: 70px;
+    justify-content: left;
+    align-items: left;
+    display: inline-block;
+}
+
+/*Contact Us*/
+.contact
+{
+    margin-top: 100px;
+}
+
+.here
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.here img
+{
+    width: 400px;
+    height: 180px;
+    margin-right: 60px;
+}
+
+.here h1
+{
+    font-size: 40px;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+    color:rgb(16, 32, 67);
+}
+
+.container_contact
+{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.contactinfo
+{
+    width: 50%;
+    height: auto;
+    text-align: center;
+    background-color:rgba(95, 132, 171, 0.323);
+    width: 50%;
+    height: 415px;
+    box-shadow: 0px 3px 6px #888;
+}
+
+.contactinfo h1
+{
+    font-size: 45px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 50px;
+    color: #040405;
+}
+
+.contactinfo h3
+{
+    font-size: 26px;
+    font-family: 'Times New Roman', Times, serif;
+    color:#140f0f;
+    margin: 30px 0 15px 0;
+}
+
+.contactinfo p
+{
+    font-size: 20px;
+    color:#170f0fb3;
+}
+
+.contactinfo p a
+{
+    text-decoration: underline;
+    color: #170f0fb3;
+}
+
+/*Google Maps*/
+.map
+{
+    width: 50%;
+    height: auto;
+    position: relative;
+}
+
+#map-btn
+{
+    position: absolute;
+    background-color: rgb(64, 68, 71);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0px 5px 8px #888;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    top: 50%;
+    left: 40%;
+    width: auto;
+    text-align: center;
+    margin: 0;
+}
+
+#map-btn:hover
+{
+    background-color: rgba(13, 19, 68, 0.915);
+    color: #fff;
+}
